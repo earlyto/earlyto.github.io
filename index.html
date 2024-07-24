@@ -17,4 +17,26 @@
     </div>
 </body>
 </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change URL Example</title>
+</head>
+<body>
+    <!-- The element that triggers the URL change -->
+    <button id="change-url-button">Click Me</button>
 
+    <!-- JavaScript -->
+    <script>
+        // JavaScript code to change the URL
+        document.getElementById('change-url-button').addEventListener('click', function() {
+            // Define the new URL path
+            const newPath = '/new-path';
+            
+            // Change the URL
+            window.location.href = window.location.origin + newPath;
+        });
+    </script>
+</body>
+</html>
